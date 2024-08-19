@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label</title>
+</head>
+<body>
+    <form action="salvar.html" method="get">
+        <fieldset>
+            <legend>Dados do usuário</legend>
+
+            <label for="nome">Nome:</label>
+            <input id="nome" name="Nome" type="text" placeholder="Digite o seu nome">
+            <br><br>
+            <label for="email">E-mail:</label>
+            <input id="email" name="E-mail" type="email" placeholder="Digite o seu e-mail">
+            <br><br>
+            <label for="senha">Senha:</label>
+            <input id="senha" name="Senha" type="password" placeholder="Digite uma senha">
+            <br><br>
+            <label>Escolha a cor do seu nome</label>
+            <input type="color">
+            <br><br>
+            <label>Sexo</label>
+            <br>
+            <input name="Sexo" type="radio" value="Masculino" id="m"> <Label for="m">Masculino</Label>
+            <br>
+            <input name="Sexo" type="radio" value="Femenino" id="f"> <Label for="f">Femenino</Label>
+            <br>
+            <input name="Sexo" type="radio" value="Não definido" id="nd"> <Label for="nd">Prefiro não informar</Label>
+            <br><br>
+            <label>Habilidade</label>
+            <br>
+            <input name="Habilidades" type="checkbox" value="HTML" id="html"> <label for="html">HTML</label>
+            <br>
+            <input name="Habilidades" type="checkbox" value="CSS" id="css"> <label for="css">CSS</label>
+            <br>
+            <input name="Habilidades" type="checkbox" value="Javascript" id="js"> <label for="js">Javascript</label>
+            <br><br>
+            <label>Província</label>
+            <br>
+            <select name="provincia">
+                <option value="Em branco" selected>-- Selecione --</option>
+                <optgroup label="Sul">
+                    <option value="Maputo">Maputo</option>
+                    <option value="Gaza">Gaza</option>
+                    <option value="Inhambane">Inhambane</option>
+                </optgroup>
+                <optgroup label="Centro">
+                    <option value="Manica">Manica</option>
+                    <option value="Sofala">Sofala</option>
+                    <option value="Tete">Tete</option>
+                    <option value="Zambezia">Zambezia</option>
+                </optgroup>
+                <optgroup label="Norte">
+                    <option value="Nampula">Nampula</option>
+                    <option value="Niassa">Niassa</option>
+                    <option value="Cabo Delgado">Cabo Delgado</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <label>Qual é a sua fruta favorita</label>
+            <br>
+            <input list="ListaFrutas" type="text" name="frutas" placeholder="Digite a fruta">
+            <br>
+            <datalist id="ListaFrutas">
+                <option value="Manga">
+                <option value="Laranja">
+                <option value="Tangerina">
+                <option value="Mançã">
+                <option value="Banana">
+                <option value="Abacate">
+            </datalist>
+            <br><br>
+            
+            <label>Coloque o seu comentario</label>
+            <br>
+            <textarea name="mensagem" cols="30" rows="10"></textarea>
+            <br><br>
+            <button>Enviar</button>
+        </fieldset>
+        
+    </form>
+</body>
+</html>

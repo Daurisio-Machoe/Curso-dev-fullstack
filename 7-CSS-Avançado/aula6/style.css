@@ -1,0 +1,89 @@
+
+
+.black {
+    
+    background-color: red;
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+    width: 100px;
+    height: 100px;
+    color: red;
+    transition-duration: 700ms;
+    transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transform-origin: 60% 50%;
+    filter: brightness(60%);
+}
+
+.box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    margin: 25px;
+    transition: 1.5s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-origin: 100% 100%;
+}
+
+.box1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 200);
+    margin: 25px;
+    transition: 1.5s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-origin: 0% 0%;
+}
+
+.box2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 68, 255);
+    margin: 25px;
+    transition: 1.5s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-origin: 50% 50%;
+}
+
+
+.caixa {
+    background-color: red;
+    margin: 12.5px;
+    width: 25px;
+    height: 25px;
+    transition-duration: 2.5s;
+}
+
+.black:hover {
+    background-color: aqua;
+    border-radius: 10%;
+    transform: rotate(360deg) scale(3, 3);
+    filter: brightness(100%);
+}
+
+.black:hover > .box {
+    background-color: red;
+    transform: rotate(495deg) scale(1, 1);
+    box-shadow: 4px 4px 10px rgb(236, 214, 17);
+}
+
+
+.black:hover > .box1 {
+    background-color: rgb(21, 255, 0);
+    transform: rotate(-495deg) scale(1, 1);
+    box-shadow: 4px 4px 10px rgb(16, 47, 226);
+}
+
+.black:hover > .box2 {
+    background-color: rgb(229, 255, 0);
+    transform: rotate(-495deg) scale(1, 1);
+    box-shadow: 4px 4px 10px rgb(12, 219, 5);
+}
+
+.black:hover > .caixa {
+    background-color: aqua;
+}
+

@@ -1,0 +1,27 @@
+:root {
+    --color-primary: rgba(0, 255, 0, 0.733);
+    --color-secundary: rgba(225, 0, 255, 0.733);
+    --cor-de-sombra: rgba(0, 238, 255, 0.733);
+}
+
+h1 {
+    color: var(--color-primary);
+}
+
+h2 {
+    color: var(--cor-de-sombra);
+}
+
+h3 {
+    color: var(--color-primary);
+}
+
+p {
+    color: var(--color-secundary);
+}
+
+button {
+    background-color: var(--color-primary);
+    color: white;
+    box-shadow: 2px 2px 5px var(--cor-de-sombra);
+}

@@ -1,0 +1,25 @@
+@import "variaveis.css";
+@import "comuns.css";
+@import "arquivo-novo";
+
+h1 {
+    color: var(--color-primary);
+}
+
+h2 {
+    color: var(--cor-de-sombra);
+}
+
+h3 {
+    color: var(--color-primary);
+}
+
+p {
+    color: var(--color-secundary);
+}
+
+button {
+    background-color: var(--color-primary);
+    color: white;
+    box-shadow: 2px 2px 5px var(--cor-de-sombra);
+}
