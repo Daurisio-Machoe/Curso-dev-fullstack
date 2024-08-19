@@ -1,0 +1,14 @@
+body {
+    background: url(1611943698781.jpg);
+}
+
+ul {
+    background-color: gray;
+    padding: 12px;
+    opacity: 0.9;
+}
+
+ul li {
+    display: inline;
+    margin: 20px;
+}

@@ -1,0 +1,65 @@
+a:hover {
+    color: rgba(69, 197, 18, 0.637);
+    font-weight: bold;
+}
+
+a:visited {
+    color: red;
+}
+
+a:active {
+    color: yellow;
+}
+
+.caixa {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 5px;
+    margin: 20px;
+    display: none;
+}
+
+.caixa:hover {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border-radius: 20px 0;
+}
+
+.caixa:active {
+    background-color: red;
+    border: 1px solid blue;
+    border-radius: 25px 0 0 0;
+    box-shadow: 3px 3px 5px aqua;
+}
+
+a:hover + .caixa {
+    display: block;
+}
+
+.filho {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    border-radius: 10px;
+    display: none;
+
+}
+
+a:active + .caixa .filho{
+    display: block;
+}
+
+ul li:first-child {
+    color: blue;
+}
+
+ul li:last-child {
+    color: red;
+}
+
+.exemplo2 p:nth-child(5) {
+    color: brown;
+}

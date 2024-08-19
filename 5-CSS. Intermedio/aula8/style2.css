@@ -1,0 +1,16 @@
+.conteudo {
+    position: relative;
+    border: 2px solid yellow;
+    padding: 20px;
+    height: 500px;
+}
+
+.quadrado {
+    position: absolute;
+    background-color: aqua;
+    box-sizing: 25px;
+    width: 70px;
+    height: 70px;
+    bottom: 100px;
+    left: 100px;
+}

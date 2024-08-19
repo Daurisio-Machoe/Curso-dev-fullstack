@@ -1,0 +1,9 @@
+ul {
+    background-color: gray;
+    padding: 12px;
+}
+
+ul li {
+    display: inline;
+    margin: 20px;
+}

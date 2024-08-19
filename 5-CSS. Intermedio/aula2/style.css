@@ -1,0 +1,20 @@
+h1 {
+    text-shadow: 2px - 2px 3px rgba(255, 255, 0, 0.993);
+}
+
+p {
+    color: blue;
+    text-align: justify;
+    font-weight: bold;
+    font-style: oblique;
+   /* font-variant: small-caps;*/
+    text-transform: capitalize;
+    text-indent: 30px;
+    word-spacing: 20px;
+    line-height: 50px;
+}
+
+a {
+    text-decoration: line-through;
+    letter-spacing: 15px;
+}
