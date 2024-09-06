@@ -1,0 +1,453 @@
+
+:root {
+    --color-primary: #917758;
+    --color-secundary: #3c2915;
+    --color-primary-light: #f5eee6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/******************
+*..Home - Header
+******************/
+.home {
+    position: relative;
+    background-size: cover;
+    background-image: url(../images/bg-home.jpg);
+    height: 100vh;
+    width: 100%;
+}
+
+.home .header {
+    padding: 30px 0;
+}
+
+.home .header .nav {
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav .navbar {
+    display: flex;
+    list-style: none;
+}
+
+
+.home .header .nav .navbar li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+.home .header .nav .navbar li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 20px;
+    transition: all 200ms ease;
+}
+
+.home .header .nav .navbar li a:hover {
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.home .header .nav .navbar .logo {
+    margin: 0 ;
+}
+
+/******************
+*..Home - banner
+******************/
+
+.home .banner {
+    width: 721px;
+    height: 202px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -360.5px;
+    color: white;
+    text-align: center;
+    color: white;
+    text-align: center;
+}
+
+.home .banner span {
+    display: block;
+}
+
+.home .banner span:first-child{
+    color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.home .banner h1 {
+    font-size: 120px;
+}
+
+.home .banner .slogan {
+    margin-bottom: 15px;
+}
+
+/***************
+*..About
+****************/
+
+.about {
+    
+    background-color: var(--color-primary);
+}
+
+.about .container {
+    display: flex;
+}
+
+.about .timing {
+    position: relative;
+    top: -50px;
+    width: 33%;
+    padding: 20px;
+    background-image: url(../images/brush-big.jpg);
+}
+
+.about .timing .overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about .timing .overlay .text {
+    margin: 10px 0;
+}
+
+.about .timing .overlay h3 {
+    color: var(--color-primary);
+    font-size: 30px;
+    border-bottom: 1px solid var(--color-primary);
+    width: fit-content;
+    margin: 0 auto 30px auto;
+}
+
+.about .timing .overlay .text::after{
+    content: '•';
+    font-size: 25px;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+
+.about .timing .overlay .text:last-of-type:after{
+    content: '|';
+}
+
+.about .timing .overlay .icon-cut{
+    width: 50px;
+}
+
+
+.about .timing  span {
+    color: white;
+    font-size: 15px;
+    display: block;
+}
+
+
+.about .timing .overlay h4 {
+    color: gray;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.about .experience {
+    width: 66%;
+    color: white;
+    margin-left: 7%;
+    margin-top: 100px;
+}
+
+.about .experience h2 {
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+.about .experience h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #a38f78;
+    margin: 20px 0;
+}
+
+.about .experience .text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .experience .text p {
+    margin-bottom: 20px;
+    font-weight: lighter;
+    font-size: 17px;
+    text-align: justify;
+}
+
+/***************
+*...Services
+****************/
+
+.services {
+    background-color: var(--color-primary-light);
+    text-align: center;
+}
+
+.services .container {
+    padding: 100px 0;
+}
+
+.services h2 {
+    color: var(--color-secundary);
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.services .boxes {
+    margin: 70px 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .boxes .box {
+    width: 330px;
+    padding: 40px 40px;
+    border: 3px solid var(--color-primary);
+    text-align: center;
+}
+
+.services .boxes .box p {
+    font-size: 14px;
+    line-height: 25px;
+
+}
+
+/***************
+*..Agendamento
+****************/
+
+.appointment{
+    height: 100vh;
+    background-color: var(--color-primary);
+    text-align: center;
+    padding: 100px 0;
+    background-image: url(../images/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: 1051px 176px;
+    background-size: 22%;
+}
+
+.appointment .container form {
+    margin-top: 80px;
+}
+
+.appointment .container button {
+    width: 50px;
+}
+
+.appointment .container form button {
+    width: 127px;
+    background-color: var(--color-secundary);
+    color: white;
+    padding: 15px 0;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.appointment .container h2 {
+    color: var(--color-primary-light);
+    font-size: 50px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.appointment .container .dataInput {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.appointment .container label {
+    font-size: 14px;
+    text-align: left;
+    color: var(--color-primary-light);
+}
+
+.appointment .container .dataInput .inputSite {
+    margin-top: 3px;
+    width: 255px;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+.appointment textarea {
+    height: 100px;
+    width: 1170px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.appointment .container .inputmensagem {
+    text-align: left;
+}
+
+/***************
+*....Galeria
+****************/
+
+.gallery {
+    padding: 100px 0;
+    background-color: var(--color-primary-light);
+}
+
+.gallery h2 {
+    color: var(--color-secundary);
+    font-weight: 400px;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.gallery img {
+    margin: 0 auto;
+    display: block;
+}
+
+.gallery .gallery-wrapper {
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 900px;
+    height: 122vh;
+}
+
+.gallery .gallery-wrapper div {
+    border: 10px solid var(--color-primary);
+    margin: 6px;
+    width: 33%;
+}
+
+.gallery .gallery-wrapper div img {
+    width: 100%;
+}
+
+/***************
+*...location
+****************/
+
+.location {
+    background-image: url(../images/bg-location.jpg);
+    background-size: cover;
+    height: 130vh;
+    padding: 100px;
+}
+
+.location .container {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.location .container .head {
+    background-color: #191919;
+    height: 23%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 50px;
+}
+
+.location .container .head .circle {
+    
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.location .container .head .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location .container .head .info span:first-child {
+    color: silver;
+    font-size: 13px;
+}
+
+.location .container .head .info span:last-child {
+    color: white;
+    font-size: 13px;
+}
+
+.location .container .head .info .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.location .container .map {
+    background-color: #ddd;
+    height: 77%;
+    transition: all 300ms ease;
+}
+
+.location .container .map:hover {
+    background-color: #eee;
+}
+
+/***************
+*...footer
+****************/
+
+footer {
+    background-color: #191919;
+    color: white;
+    width: 100%;
+    height: 100px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
