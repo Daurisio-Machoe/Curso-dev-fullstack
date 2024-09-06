@@ -1,0 +1,146 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121212;
+    font-size: 16px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listaTarefa {
+    width: 100%;
+    max-width: 600px;
+
+    header {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        padding: 15px;
+        background-color: #de3f53;
+        color: #fff;
+        font-size: 1.3em;
+    }
+
+    .wrapper-list ul.list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            position: relative;
+            background-color: #262e4c;
+            border-bottom: 1px solid #1c2340;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            transition: background-color 300ms ease ;
+            color: white;
+
+            &.removed {
+                animation: collapseItem 300ms ease;
+            }
+
+            &.hidden {
+                display: none;
+            }
+
+            &:hover {
+                background-color: #323b5c;
+            }
+
+            &:hover button.remove {
+                opacity: 1;
+            }
+
+            .check {
+                position: relative;
+                background-color: #404a6e;
+                border-radius: 50%;
+                display: block;
+                width: 20px;
+                height: 20px;
+                margin-right: 20px;
+                cursor: pointer;
+                transition: background-color 200ms ease;
+
+                &:hover {
+                    background-color: #171d37;
+                }
+            }
+
+            &.done .check {
+                background-color: #171d37;
+            }
+
+            &.done .check:after {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                display: block;
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: green;
+            }
+
+            &.done .task {
+                text-decoration: line-through;
+            }
+
+            button.remove {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                border: none;
+                outline: none;
+                background-color: red;
+                font-weight: bold;
+                border-radius: 100%;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                opacity: 0;
+                transition: opacity 300ms ease;
+
+                &:after {
+                    content: 'x';
+                    color: white;
+                    display: block;
+                }
+
+            }
+        }
+    }
+
+    footer {
+        background-color: #171d37;
+        input {
+            background-color: #171d37;
+            border: none;
+            outline: none;
+            width: 90%;
+            padding: 20px;
+            font-size: 1.2em;
+            color: white;
+    
+        }
+    } 
+}
+
+@keyframes collapseItem {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(-90deg);
+    }
+}
