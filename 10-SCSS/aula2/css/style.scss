@@ -1,0 +1,49 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    
+
+    .box {
+        background-color: whitesmoke;
+        color: black;
+        border-radius: 8px;
+        width: 25%;
+        padding: 20px;
+
+        &.active {
+            background-color: red;
+        }
+
+        h1 {
+            font-size: 23px;
+        }
+
+        p {
+            font-size: 18px;
+
+            &.hidden {
+                display: none;
+            }
+        }
+
+        a {
+            color: green;
+
+            &:hover {
+                color: yellow;
+
+                & + p.hidden {
+                    display: block;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,57 @@
+$color-primary: black;
+$color-secundary: red;
+
+$font-primary: 'Arial', sans-serif;
+$font-secundary: 'verdana', sans-serif;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: $color-primary;
+    display: flex;
+    justify-content: space-around;
+    
+
+    .box {
+        background-color: whitesmoke;
+        color: $color-primary;
+        border-radius: 8px;
+        width: 25%;
+        padding: 20px;
+
+        &.active {
+            background-color: $color-secundary;
+        }
+
+        h1 {
+            font-family: $font-primary;
+            font-size: 23px;
+        }
+
+        p {
+            font-family: $font-secundary;
+            font-size: 18px;
+
+            &.hidden {
+                display: none;
+            }
+        }
+
+        a {
+            color: green;
+
+            &:hover {
+                color: yellow;
+
+                & + p.hidden {
+                    display: block;
+                }
+            }
+        }
+
+    }
+}

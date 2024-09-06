@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+.container .box {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 8px;
+  width: 25%;
+  padding: 20px;
+}
+.container .box.active {
+  background-color: red;
+}
+.container .box h1 {
+  font-size: 23px;
+}
+.container .box p {
+  font-size: 18px;
+}
+.container .box p.hidden {
+  display: none;
+}
+.container .box a {
+  color: green;
+}
+.container .box a:hover {
+  color: yellow;
+}
+.container .box a:hover + p.hidden {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

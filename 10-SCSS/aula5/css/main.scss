@@ -1,0 +1,58 @@
+@import 'base';
+@import 'variablel';
+
+@mixin reset-list {
+    margin: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    background-color: $color-primary;
+    display: flex;
+    justify-content: space-around;
+    
+
+    .box {
+        background-color: whitesmoke;
+        color: $color-primary;
+        border-radius: 8px;
+        width: 25%;
+        padding: 20px;
+
+        &.active {
+            background-color: $color-secundary;
+        }
+
+        h1 {
+            font-family: $font-primary;
+            font-size: 23px;
+        }
+
+        p {
+            font-family: $font-secundary;
+            font-size: 18px;
+
+            &.hidden {
+                display: none;
+            }
+        }
+
+        a {
+            color: green;
+
+            &:hover {
+                color: yellow;
+
+                & + p.hidden {
+                    display: block;
+                }
+            }
+        }
+
+        ul {
+            @include reset-list()
+        }
+
+    }
+}
