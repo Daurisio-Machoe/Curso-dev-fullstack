@@ -1,0 +1,23 @@
+.formulario {
+  background-color: rgb(33, 216, 216);
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+  font-size: 18px;
+}
+.formulario .distrito {
+  display: none;
+}
+.formulario select {
+  padding: 3px;
+}
+.formulario .enviar {
+  background-color: rgb(33, 216, 216);
+}
+.formulario .enviar:hover {
+  background-color: rgb(5, 89, 92);
+  box-shadow: 1px 1px 1px white;
+  color: aqua;
+}/*# sourceMappingURL=style.css.map */

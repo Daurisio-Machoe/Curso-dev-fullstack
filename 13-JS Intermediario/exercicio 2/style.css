@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.principal {
+  position: relative;
+  background-color: whitesmoke;
+  width: 200px;
+  height: 200px;
+}
+.principal .contador {
+  position: absolute;
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 25px;
+  top: 55px;
+  left: 65px;
+}
+.principal .adicao {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+}
+.principal .subitracao {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+}
+.principal .red {
+  background-color: rgba(94, 255, 0, 0.767);
+}/*# sourceMappingURL=style.css.map */

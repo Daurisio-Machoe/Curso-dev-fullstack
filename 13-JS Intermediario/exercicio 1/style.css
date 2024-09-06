@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+}
+body .principal {
+  position: relative;
+  background-color: whitesmoke;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+}
+body .principal #contador {
+  position: absolute;
+  top: 69px;
+  left: 75px;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  color: black;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+}
+body .principal #subtrair {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 5px;
+  left: 5px;
+}
+body .principal #adicionar {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 5px;
+  right: 5px;
+}/*# sourceMappingURL=style.css.map */

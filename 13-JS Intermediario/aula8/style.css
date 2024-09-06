@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cronometro {
+  background-color: rgb(169, 187, 181);
+  border: 1px solid aqua;
+  width: 300px;
+  height: 300px;
+  margin: 200px auto;
+  text-align: center;
+  position: relative;
+}
+.cronometro main {
+  background-color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  margin: 100px auto;
+  line-height: 50px;
+  text-align: center;
+}
+.cronometro .pausar {
+  position: absolute;
+  padding: 5px;
+  background-color: rgb(109, 109, 206);
+  color: black;
+  box-shadow: 1px 1px 3px;
+  bottom: 0%;
+  right: 0%;
+}/*# sourceMappingURL=style.css.map */

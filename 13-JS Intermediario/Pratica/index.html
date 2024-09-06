@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="myselect" onchange="myFuction()">
+        <option value="Laranja">Laranja</option>
+        <option value="Maçã">Maçã</option>
+        <option value="Manga">Manga</option>
+
+    </select>
+    
+    <p>
+        Wh
+    </p>
+    <p id="demo"></p>
+
+    <script>
+        function myFuction() {
+            var x = document.querySelector("#myselect").value;
+            document.querySelector("#demo").innerHTML = `you selected ${x}`
+
+        }
+    </script>
+</body>
+</html>

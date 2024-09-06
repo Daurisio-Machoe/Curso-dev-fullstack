@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="formCadastro" action="gravarDados.html">
+        <div>
+            <label>
+                Nome
+                <input type="text" name="nome">
+                <span class="erro"></span>
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Email
+                <input type="text" name="email">
+                <span class="erro"></span>
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Cidade
+                <select name="cidade">
+                    <option value="">-- Selecione --</option>
+                    <option value="Maputo">Maputo</option>
+                    <option value="Xai-xai">Xai-xai</option>
+                    <option value="Maxixe">Maxixe</option>
+                </select>
+                <span class="erro"></span>
+            </label>
+           
+        </div>
+
+        <button type="submit" id="submeter">Cadastrar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

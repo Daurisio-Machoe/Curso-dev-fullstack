@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  margin: 20px;
+  padding: 20px;
+}
+form div {
+  margin: 10px;
+}
+
+.inputErro {
+  border: 1px solid red;
+}
+
+.erro {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#principal {
+    display: flex;
+
+    div {
+        background-color: antiquewhite;
+        margin: 20px ;
+        padding: 15px;
+        box-shadow: 2px 2px 3px black;
+         border-radius: 5px;
+
+         &:hover{
+            background-color: aqua;
+         }
+    }
+}

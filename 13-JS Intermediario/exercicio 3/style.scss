@@ -1,0 +1,31 @@
+
+.formulario{
+    background-color: rgb(33, 216, 216);
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    font-size: 18px;
+
+    .distrito{
+        display: none;
+    }
+
+    select {
+        padding: 3px;
+    }
+    
+    .enviar {
+        background-color: rgb(33, 216, 216);
+
+
+        &:hover {
+            background-color: rgb(5, 89, 92);
+            box-shadow: 1px 1px 1px white;
+            color: aqua;
+        }
+    }
+    
+}
+

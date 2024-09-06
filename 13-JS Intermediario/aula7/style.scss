@@ -1,0 +1,16 @@
+.toast {
+    display: inline-block;
+    position: absolute;
+    left: -100%;
+    bottom: 30px;
+    background-color: rgb(174, 202, 202);
+    border: 1px solid aqua;
+    border: 6px;
+    padding: 15px;
+    color: green;
+    transition: all 600ms ease;
+
+    &.visible{
+        left: 30px;
+    }
+}
